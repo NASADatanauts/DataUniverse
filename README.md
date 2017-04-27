@@ -12,11 +12,11 @@ The data on data.nasa.gov is not complete.
 The current way of finding data is either by using text search or by asking people directly.
 
 Objectives:
-•	Create a(n impressive ;)) visual representation of the data which can easily be explored via a website
-•	Structure the data by topics (e.g. Earth, orbit, solar system, deep space, missions, general)
-•	Be able to access each piece of API/data in 3 clicks max (3 levels)
-•	Possibly use machine learning/crowdsourcing to classify data sources into topics
-•	Enable datanauts to easily add newly found APIs and data sources
+*	Create a(n impressive ;)) visual representation of the data which can easily be explored via a website
+*	Structure the data by topics (e.g. Earth, orbit, solar system, deep space, missions, general)
+*	Be able to access each piece of API/data in 3 clicks max (3 levels)
+*	Possibly use machine learning/crowdsourcing to classify data sources into topics
+*	Enable datanauts to easily add newly found APIs and data sources
 
 Use case:
 I want to play with ISS data:
