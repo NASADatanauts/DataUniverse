@@ -9,12 +9,12 @@
   </script>
   <script
       type="text/javascript"
-      src="http://d3js.org/queue.v1.min.js"> 
+      src="http://d3js.org/queue.v1.min.js">
   </script>
 </head>
 <body>
 <script type="text/javascript">
- 
+
 /* Set the diagrams Height & Width */
     var h = 8000, w = 8000;
 /* Set the color scale we want to use */
@@ -27,7 +27,7 @@
 /* Build the directional arrows for the links/edges */
         svg.append("svg:defs")
                     .selectAll("marker")
-                    .data(["end"]) 
+                    .data(["end"])
                     .enter().append("svg:marker")
                     .attr("id", String)
                     .attr("viewBox", "0 -5 10 10")
@@ -40,9 +40,9 @@
                     .attr("d", "M0,-5L10,0L0,5");
 /* Pre-Load the json data using the queue library */
 queue()
-    .defer(d3.json, "nodes.json")
-    .defer(d3.json, "links.json")
-    .await(makeDiag); 
+    .defer(d3.json, "https://raw.githubusercontent.com/chucheria/DataUniverse/master/example/nodes.json")
+    .defer(d3.json, "https://raw.githubusercontent.com/chucheria/DataUniverse/master/example/links.json")
+    .await(makeDiag);
 /* Define the main worker or execution function */
 function makeDiag(error, nodes, links, table) {
     /* Establish the dynamic force behavor of the nodes */
@@ -70,8 +70,8 @@ function makeDiag(error, nodes, links, table) {
                     .attr("fill", "black")
                     .attr("font-family", "sans-serif")
                     .attr("font-size", "40px")
-                    .text(function(d) { return d.name; });                     
-    /* Draw the nodes themselves */                
+                    .text(function(d) { return d.name; });
+    /* Draw the nodes themselves */
     var nodes = svg.selectAll("circle")
                     .data(nodes)
                     .enter()
