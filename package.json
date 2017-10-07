@@ -1,0 +1,29 @@
+{
+  "name": "datauniverse",
+  "version": "0.0.0",
+  "description": "Visualization on the NASA's Data Universe",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chucheria/DataUniverse.git"
+  },
+  "keywords": [
+    "nasa",
+    "data",
+    "d3",
+    "visualization",
+    "dataviz"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chucheria/DataUniverse/issues"
+  },
+  "homepage": "https://github.com/chucheria/DataUniverse#readme"
+}
